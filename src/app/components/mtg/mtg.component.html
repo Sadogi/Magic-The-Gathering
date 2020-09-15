@@ -1,0 +1,69 @@
+<!-- <nb-card *ngFor="let item of model?.data" display="grid">
+    {{item.name}}
+    <div>
+        <img [src]="item.image_uris.small" alt="{{item.name}}"/>
+    </div>
+    <a [routerLink]="['../mtgdetails', item.id]">{{item.name}}</a>
+</nb-card> -->
+
+<!-- <div class="row">
+    <div class="column" *ngFor="let item of model?.data">
+      <img [src]="item.image_uris.small" alt="{{item.name}}">
+    </div>
+</div> -->
+<nb-card>
+    <nb-card-header>
+        <h3>MTG 2015</h3>
+    </nb-card-header>
+    <nb-card-body>
+        <ul class="display">  
+            <li *ngFor="let item of model?.data" display="grid">
+                
+                <!-- <img [routerLink]="['../mtgdetails', item.id]" class="zoom" [src]="item.image_uris.small" alt="{{item.name}}"/> -->
+                <img [routerLink]="['../mtgdetails', item.id]" class="zoom" [src]="item.image_uris.small" alt="{{item.name}}"/>            
+    
+            </li> 
+                
+    </ul>
+    
+    <button nbButton (click)="clickPrevious()">Précédent</button>
+    <button nbButton (click)="clickNext()">Suivant</button>
+    </nb-card-body>
+</nb-card>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <nb-card *ngFor="let item of model?.data" display="grid">
+    {{item.name}} -->
+    <!-- {{item.id}} -->
+    <!-- <a [routerLink]="[item.image_uris.small]">Go to Set</a> -->
+    <!-- <div>
+        <img [src]="item.image_uris.small" alt="{{item.name}}"/>
+    </div>
+    <a [routerLink]="['../mtgdetails', item.id]">{{item.name}}</a>
+</nb-card> -->
+
+
+<!-- <table width="500px"class="table table-striped">
+    <tr>
+        <th>Name</th>
+        <th>Cover</th>
+    </tr> -->
+    <!-- <tr *ngFor="let item of model?.data"> -->
+        <!-- <td>{{item.name}}</td> -->
+        <!-- <td>
+        <img [src]="item.image_uris.small" alt="{{item.name}}"/>
+        </td>
+    </tr>
+</table> -->

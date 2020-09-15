@@ -1,0 +1,40 @@
+<nb-card>
+    <nb-card-header>
+        <p>
+            {{model.name}} - {{model.rarity}}
+        </p>
+        
+    </nb-card-header>
+    <nb-card-body>
+        <table>
+            <td class="no-border">
+                <img [src]="model.image_uris.png" width="372.5px" height="520px"/>
+            </td>
+            <td class="no-border">
+                <table>
+                    <tr>
+                        <td class="td1">
+                            Price: {{model.prices.usd}} $ - {{model.prices.eur}} eur
+                        </td>
+                        
+                    </tr>
+                    <!-- <tr>
+                        <td>
+                            Rarity : {{model.rarity}}
+                        </td>
+                        
+                    </tr> -->
+                    <tr>
+                        <td>
+                            Release date : {{model.released_at}}
+                        </td>
+                        
+                    </tr>
+                </table>    
+            </td>   
+        </table>
+    </nb-card-body>
+    <nb-card-footer>
+        <button nbButton routerLink="/mtg">Back to list</button>
+    </nb-card-footer>
+</nb-card>
